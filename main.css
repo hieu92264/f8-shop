@@ -1,0 +1,136 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 20px dashed #ccc;
+  padding: 20px;
+  box-sizing: border-box;
+  background-origin: border-box;
+  background-position: center;
+  /* cú pháp shothand của background: url(link) position / background-size background-repeat; */
+}
+#First-Heading {
+    color: red;
+    font-size: 30px;
+}
+#Second-Heading{
+    color: green;
+    font-size: 25;
+}
+
+.Tale_Selector {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+  }
+
+.Tale_Selector .Heading_Table {
+    text-align: center;
+    color: var(--textcolor);
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table tbody td {
+    padding: 10px;
+  }
+  
+  table tbody tr:nth-child(odd) {
+    background-color: #f8f8f8;
+  }
+  
+  table tbody tr:hover {
+    background-color: #e2e2e2;
+  }
+
+  .Tale_Selector table thead th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ccc;
+  }
+  
+  .Tale_Selector table tbody td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .Tale_Selector table tbody tr:nth-child(odd) {
+    background-color: #f8f8f8;
+  }
+  
+  .Tale_Selector table tbody tr:hover {
+    background-color: #e2e2e2;
+  }
+  .Title_Table {
+    text-align: center;
+  }
+  :root {
+    --textcolor: red;
+  }
+
+  .pseudo-classes h1:hover {
+      color: aquamarine;
+  }
+  .box {
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+  }
+  .box1 {
+    background-color: #333;
+    margin: 2px;
+  }
+  .box2 {
+    background-color: orange;
+  }
+  .box3 {
+    background-color: firebrick;
+    padding: 10px 12px 8px 6px; /* trên phải dười trái theo chều kim đồng hồ */
+  }
+  .Box-Sizing {
+    width: 100px;
+    height: 100px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    padding: 16px;
+    border: 2px;
+    box-sizing: border-box; /*tổng kích thước của box sẽ không bị đổi*/
+  }
+  .Box-Sizing {
+    box-sizing: unset; /*Huỷ thay đổi trở về ban đầU*/
+  }
+  .position h1 {
+    color: blue;
+    position: relative; /*vị trí tương đối không phụ thuộc vào đối tượng nào khác, chính nó là toạ độ*/
+    /* top: 100px;
+        left: 100px;
+      chỉ hoạt đỘng khi có position*/
+  }
+ 
+  

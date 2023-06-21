@@ -1,0 +1,192 @@
+<!--sau nay dang tai website len hosting da phan hosting dc cau hinh tu dong truy cap vao file index => dung index de code trang chu website--> 
+<!DOCTYPE html>
+<!--Cặp thẻ đóng và thẻ mở 1 file html chỉ đc 1 thẻ html-->
+<html>
+    
+    <head>
+        <title>F8-Shop</title>
+        <meta charset="utf-8"> <!--dung de ghi tieng viet-->
+        <style>
+            html {
+                font-size: 100%;
+            }
+            /* h1 {
+                color: red;
+                font-size: 30px;
+            } */
+        </style> 
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body>
+        <div class="Main">
+                    <!--
+            thẻ h1-h6 => Heading
+            thẻ p nghĩa là paragraph dùng để viết văn bản
+            thẻ img alt xuất hiện khi ảnh bị lỗi
+            thẻ a - anchor nghĩa là trang web hiệN tại sẽ có link liên kết đến một trang khác
+            thẻ ul, li - unordered list, list item 
+            thẻ input sinh ra ô input để nhập dữ liệu or chọn tuỳ theo type
+            thẻ button
+            -->
+            <img src="" alt="">
+            <a href="">Tới trang facebook của tôi</a>
+            <ul>
+                <li>HTML, CSS là gì?</li>
+                <li>Cài đặt môi trường</li>
+            </ul>
+            <table class="test-table">
+                <thead>
+                    <th>STT</th>
+                    <th>Tên</th>
+                    <th>Địa chỉ</th>
+                </thead>
+
+                <tbody>
+                    <tr><td>1</td>
+                        <td>Hồng Hà</td>
+                        <td>Hải Phòng</td>
+                    </tr>
+                    <tr><td>2</td>
+                        <td>Sơn Đặng</td>
+                        <td>Hà Nội</td>
+                    </tr>
+                    <tr><td>3</td>
+                        <td>Sơn Đần</td>
+                        <td>Hải Phòng</td>
+                    </tr>
+                </tbody>
+            </table>
+            <input type="text">
+            <input name="Nam" type="radio">
+            <input name="Nữ" type="radio">
+            <input name="khác" type="radio">
+            <button>Đăng nhập</button>
+        </div>
+        <div>
+            <h1 style="color: red; font-size: 30pt"; id="Frist-Heading">CSS in HTML</h1>
+            <ol>
+                <li>Internal</li> <!--sử dụng css trong chính file HTML-->
+                <li>External</li> <!--tạo ra một file main.css để viết code css cho tệp html-->
+                <li>Inline</li> <!--sử dụng một attribute style trong thẻ mở của html-->
+            </ol>
+        </div>
+        <div>
+            <h1 class="Title_Table">CSS selectors</h1> <!--Class sử dụng dầu "." ở đầu còn ID thì dùng "#" ở đầu-->
+            <h2>ID & Class</h2>
+        </div>
+        <div class="Tale_Selector">
+            <h1 class="Heading_Table">Bảng tra cứu CSS selectors cơ bản</h1>
+            <table class="selector">
+                <thead>
+                <tr>
+                <th>Selector</th>
+                <th>Ví dụ</th>
+                <th>Mô tả</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>.class</td>
+                <td>.intro</td>
+                <td>Chọn tất cả các thẻ có class="intro"</td>
+                </tr>
+                <tr>
+                <td>.class1.class2</td>
+                <td>.name1.name2</td>
+                <td>Chọn tất cả các thẻ có cả name1 và name2 được đặt trong thuộc tính class của nó</td>
+                </tr>
+                <tr>
+                <td>.class1 .class2</td>
+                <td>.name1 .name2</td>
+                <td>Chọn tất cả các thẻ có class="name2" là con của một phần tử có class="name1"</td>
+                </tr>
+                <tr>
+                <td>*</td>
+                <td>*</td>
+                <td>Chọn tất cả các thẻ</td>
+                </tr>
+                <tr>
+                <td>element</td>
+                <td>h2</td>
+                <td>Chọn tất cả các thẻ h2</td>
+                </tr>
+                <tr>
+                <td>element.class</td>
+                <td>div.box</td>
+                <td>Chọn tất cả thẻ div có class="box"</td>
+                </tr>
+                <tr>
+                <td>element, element</td>
+                <td>div, h2</td>
+                <td>Chọn tất cả thẻ div và h2</td>
+                </tr>
+                <tr>
+                <td>element element</td>
+                <td>div p</td>
+                <td>Chọn tất cả thẻ p trong thẻ div</td>
+                </tr>
+                <tr>
+                <td>element &gt; element</td>
+                <td>div &gt; p</td>
+                <td>Chọn tất cả thẻ p là con trực tiếp của thẻ div</td>
+                </tr>
+                <tr>
+                <td>element + element</td>
+                <td>div + p</td>
+                <td>Chọn thẻ p đứng liền kề sau thẻ div</td>
+                </tr>
+                <tr>
+                <td>element ~ element</td>
+                <td>div ~ p</td>
+                <td>Chọn tất cả thẻ p đứng sau thẻ div</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="Box">
+            <h1>CSS functions</h1>
+            <ol>
+                <li>var()</li>
+                <li>linear-gradient()</li>
+                <li>rgba()</li>
+                <li>rgb()</li>
+                <li>calc()</li>
+                <li>attr()</li>
+            </ol>
+        </div>
+        <div class = "pseudo-classes">
+            <h1>CSS pseudo-classes(Lớp giả)</h1>
+            <ul>
+                <li>:root</li>
+                <li>:hover</li>
+                <li>:active</li>
+                <li>:first-child</li>
+                <li>:last-child</li>
+            </ul>
+        </div>
+        <div class = "CSS_pseudo-element">
+            <h1>CSS pseudo-element(Thẻ giả)</h1>
+            <ul>
+                <li>::before</li> <!--được sử dụng đẻ chèn một phần tử ảo vào trước nội dung một phần tử được chọn; yêu cầu phải có content: -->
+                <li>::after</li>
+                <li>::first-letter</li>
+                <li>::first-line</li>
+                <li>::selection</li>
+            </ul>
+        </div>
+        <div class="box box1">Box 1</div>
+        <div class="box box2">Box 2</div>
+        <div class="box box3">Box 3</div>
+        <div class="Box-Sizing">Box-Sizing</div>
+        <div class="position">
+            <h1>Position</h1>
+            <ul>
+                <li>Relative</li>
+                <li>Absolute</li>
+                <li>Fixed</li>
+                <li>Sticky</li>
+            </ul>
+        </div>
+    </body>
+</html>
